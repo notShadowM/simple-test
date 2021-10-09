@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 100vw;
   height: 60px;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -26,21 +26,21 @@ export const Container = styled.div`
   }
 `;
 
-export const category = styled.div`
+export const Category = styled.div`
   font-size: 12px;
   color: #000;
   display: flex;
   align-items: center;  
 `;
 
-export const name = styled.div`
+export const Name = styled.div`
   color: #FF1493;
   font-size: 14px;
   font-weight: bold;
 
 `;
 
-export const create = styled.div`
+export const Create = styled.div`
   color: #FF1493;
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ export const create = styled.div`
   font-size: 12px;
 `;
 
-export const btn = styled.button`
+export const Btn = styled.button`
   background: linear-gradient(180deg, rgba(245,15,24,1) 0%, rgba(252,70,107,1) 67%);
   outline: none;
   border: none;
@@ -59,7 +59,7 @@ export const btn = styled.button`
   height: 25px;
 `;
 
-export const details = styled.div`
+export const Details = styled.div`
   display: flex;
   justify-content: right;
   gap: 20px;
@@ -71,7 +71,7 @@ export const details = styled.div`
   }
 `;
 
-export const data = styled.div`
+export const Data = styled.div`
   display: flex;
   justify-content: center;
 `;

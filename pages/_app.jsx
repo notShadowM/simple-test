@@ -1,5 +1,8 @@
 import Head from "next/head";
 import { createGlobalStyle } from 'styled-components';
+import Sidebar from "../src/components/Sidebar";
+import Header from "../src/components/Header";
+import { useState } from "react";
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -21,13 +24,18 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function MyApp({ Component, pageProps }) {
+  const [nav,setNav] = useState("Campaign");
+  const [data,setData] = useState([]);
+
   return (
     <>
       <Head>
         <title>test</title>
       </Head>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <Header nav={nav} data={data} />
+      <Sidebar nav={nav} setNav={setNav} />
+      <Component nav={nav} setData={setData} {...pageProps} />
     </>
   )
 }

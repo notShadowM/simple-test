@@ -31,7 +31,7 @@ export const Container = styled.div`
     }
 `;
 
-export const navItem = styled.div`
+export const NavItem = styled.div`
   display: flex;
   flex-direction:column;
   align-items: center;
@@ -50,13 +50,13 @@ export const navItem = styled.div`
   }
 `;
 
-export const navTitles = styled.div`
+export const NavTitles = styled.div`
   color:#fff;
   font-size: 10px;
 `;
 
-export const menuBtn = styled.div`
-  position: absolute;
+export const MenuBtn = styled.div`
+  position: fixed;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -65,11 +65,11 @@ export const menuBtn = styled.div`
   height: 50px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-  top:0px;
+  top:4px;
   left: 5px;
 `;
 
-export const burger = styled.div`
+export const Burger = styled.div`
   width: 30px;
   height: 3px;
   background: ${({toggle}) => toggle?" #fff":"#000"};

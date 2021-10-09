@@ -18,16 +18,16 @@ export default function Sidebar({nav,setNav}) {
 
   return (
     <>
-      <S.menuBtn onClick={e => setToggle(prev => !prev)}>
-        <S.burger toggle={toggle} />
-      </S.menuBtn>
+      <S.MenuBtn onClick={e => setToggle(prev => !prev)}>
+        <S.Burger toggle={toggle} />
+      </S.MenuBtn>
       <S.Container toggle={toggle}>
         {
         icons.map(({icon,title},index) => 
-          <S.navItem key={index} unselectable={title} selected={nav===title} onClick={e => setNav(title)}>
+          <S.NavItem key={index} unselectable={title} selected={nav===title} onClick={e => setNav(title)}>
             <Icon icon={icon} color="#FFF" width="36" />
-            <S.navTitles>{title}</S.navTitles>
-          </S.navItem>)
+            <S.NavTitles>{title}</S.NavTitles>
+          </S.NavItem>)
         }
       </S.Container>
     </>

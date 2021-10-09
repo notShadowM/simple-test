@@ -6,42 +6,42 @@ export default function Header({nav,data}) {
 
   const headerData = {
     "Campaign":
-      <S.details>
-        <S.btn>join</S.btn>
-        <S.create><Icon icon="akar-icons:circle-plus" /> Create Campaign</S.create>
-      </S.details>,
+      <S.Details>
+        <S.Btn>join</S.Btn>
+        <S.Create><Icon icon="akar-icons:circle-plus" /> Create Campaign</S.Create>
+      </S.Details>,
     "Content":
-      <S.details>
-        <S.btn>Watch more</S.btn>
-        <S.create><Icon icon="akar-icons:circle-plus" /> Add content</S.create>
-      </S.details>,
+      <S.Details>
+        <S.Btn>Watch more</S.Btn>
+        <S.Create><Icon icon="akar-icons:circle-plus" /> Add content</S.Create>
+      </S.Details>,
     "Ship Sample":
-      <S.details>
-        <S.btn>Test a Sample</S.btn>
-      </S.details>,
+      <S.Details>
+        <S.Btn>Test a Sample</S.Btn>
+      </S.Details>,
     "Billing":
-      <S.details>
-        <S.btn>know more</S.btn>
-      </S.details>,
+      <S.Details>
+        <S.Btn>know more</S.Btn>
+      </S.Details>,
     "Orders":
-      <S.details>
-        <S.btn>Buy now</S.btn>
-      </S.details>,
+      <S.Details>
+        <S.Btn>Buy now</S.Btn>
+      </S.Details>,
   }
 
   return (
     <S.Container>
-      <S.category>
+      <S.Category>
         {nav} 
         <Icon icon="ic:baseline-keyboard-arrow-right" width="18" height="18"/> 
-        <S.name> Kevin Alex</S.name>
-      </S.category>
+        <S.Name> Kevin Alex</S.Name>
+      </S.Category>
 
       {data.map((e) =>{
         return(
-          <S.data>
-            <S.create><Icon icon="akar-icons:circle-plus" /> {e}</S.create>
-          </S.data>
+          <S.Data>
+            <S.Create><Icon icon="akar-icons:circle-plus" /> {e}</S.Create>
+          </S.Data>
         )
       })}
 
